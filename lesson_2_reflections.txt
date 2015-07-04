@@ -1,0 +1,7 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+When a repository is initialized, Git installs hidden files to the directory that are used for versioning. It needs to be done because Git needs the hooks to install the versioning tracking that's not normally present in a directory.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+The staging area is different from the working direcory(ies) and the repository in that it's an intermediate area; a place where the files are staged before they're committed or discarded (hence the name). Like a staging area in the real world, we can hold our objecys there while we decide if they're ready to be used for prime time. If they are then we commit. If not then we discard.
