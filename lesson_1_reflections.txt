@@ -1,0 +1,28 @@
+I always knew that large companies use version control in the development of their applications. It only makes sense; if a company has dozens of programmers working on a software project there has to be a way to coordinate all of the different coders efficiently. 
+
+The whole point of Git is to allow programmers to complete projects more efficiently. This first lesson gives an example of this. While with one person finding code changes maybe somewhat trivial (especially if that person is intimately familiar with the code) when working with many developers something like this is essential. I'm guessing that many of the other features of GitHub are the same way; useful for a single developer but critical for a team of developers.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+If I can go back and see all of the changes made to a specific file over time I can pinpoint when a certain bug was introduced or deduce when an update broke the code.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+The big con is that a programmer may not always remember to commit large sections of code. Similar to having a backup strategy, one must commit along a set schedule in order for the commits to be effective. Whereas with a backup strategy the schedule makes sense to be time-based, with a commit strategy, it makes sense to be logically (or feature if you prefer) based.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Files in a repository are explicitly related, hence why the programmer placed them in the same repository. This isn't necessarily the case in a Google docs directory (and would rarely be the case in almost all instances).
+
+How can you use the commands git log and git diff to view the history of files?
+
+git log shows the history of commits and git diff shows the differences between those commits. It's self-explanatory that the utility showing differences in files will show how the history of those files changing over time.
+
+How might using version control make you more confident to make changes that could break something?
+
+I can always go back and revert to when I know that the code was working. I don't need to be careless, however the code will always be there.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+I want to try to use Git for my coding projects, specifically the projects that I'm doing through the Android Nanodegree.
+
