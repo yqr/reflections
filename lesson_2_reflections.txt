@@ -4,4 +4,26 @@ When a repository is initialized, Git installs hidden files to the directory tha
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
-The staging area is different from the working direcory(ies) and the repository in that it's an intermediate area; a place where the files are staged before they're committed or discarded (hence the name). Like a staging area in the real world, we can hold our objecys there while we decide if they're ready to be used for prime time. If they are then we commit. If not then we discard.
+The staging area is different from the working direcory(ies) and the repository in that it's an intermediate area; a place where the files are staged before they're committed or discarded (hence the name). Like a staging area in the real world, we can hold our objects there while we decide if they're ready to be used for prime time. If they are then we commit. If not then we discard.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+The staging area shows the changes that are made to your working directory. Using the diff command, I can see which changes have been made between the working directory and the last commit. I can also see which files are affected by using the git status command. Using these tools I can make sure only one logical change is present between git commits.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+If I have several distinct versions of my software then it makes sense to branch the code. The example that they give in the course is a good one: if refactoring the code into a new language (programming or otherwise). The code remains the same, however it is different in that it is now in a new language.
+
+How do the diagrams help you visualize the branch structure?
+
+The diagrams, like a family tree, show the relationships between the different parents on a branch. Like a family tree diagram, we can trace back our code through the parent commits back to the original commit where our repository was first created.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Merging two branched together takes all of the code changes from both branches and combines them into a single commit. We represent it that way so that we can see that 2 branches are coming together into one branch. It's not like a branch is hanging; both branches are incorporated into the new branch.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+The pro of automatic merging is that git adds all of the changes that another branch has made and merges it into our current files. We can have multiple people working on a file and not have to worry about breaking someone else's code as git automatically handles conflicts. Another pro is that if someone else has changed a section of code that I've also changed, I can look at both pieces of code and choose the one that I think is the best.
+
+One of the cons of doing merges automatically is that git will choose which sections of the document are in conflict and which ones aren't. If reviewing some code manually, I may see a function that's similar to one that I had written, but that someone else has put in a different place. Since git is just guessing at our intent, it doesn't necessarily know that the 2 functions are similar and will merge them both into the file, creating duplicate functions and an inefficiency.
